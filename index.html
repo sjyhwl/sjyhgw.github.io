@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>视界萤火</title>
+		<link rel="stylesheet" href="common/vant.min.css" />
+		<script src="common/vue.js"></script>
+		<script src="common/vant.min.js"></script>
+		<script src="common/axios.min.js"></script>
+		<script src="common/Session.js"></script>
+		<script src="common/Tools.js"></script>
+		<script src="common/Validate.js"></script>
+		<script src="common/Page.js"></script>
+		<script src="common/Http.js"></script>
+		<script src="common/index.umd.js"></script>
+		<link rel="stylesheet" href="common/diygw-ui/index.css" />
+	</head>
+	<body>
+		<div id="app">
+			<div class="container container329290">
+				<img src="./static/17209384160491.png" class="response diygw-col-24 image13-clz" mode="widthFix" />
+				<div class="flex swipers1 diygw-col-24 swipers1-clz">
+					<van-swipe :current="swipers1Index" class="swiper swiper-indicator_rect_radius indicator-right-bottom" @change="changeSwipers1" indicator-color="rgba(201, 190, 190, 0.39)" indicator-active-color="rgba(150, 139, 139, 0.93)" indicator-dots="true" autoplay="3000" interval="3000" circular="true" style="height: 297px">
+						<van-swipe-item class="diygw-swiper-item">
+							<div class="diygw-swiper-item-wrap">
+								<div class="flex flex-wrap diygw-col-24 flex-direction-column justify-end flex2-clz">
+									<span class="diygw-col-24 text-clz"> 视界萤火 </span>
+									<span class="diygw-col-24"> 让梦想落地成图 </span>
+								</div>
+							</div>
+						</van-swipe-item>
+						<van-swipe-item class="diygw-swiper-item">
+							<div class="diygw-swiper-item-wrap">
+								<div class="flex flex-wrap diygw-col-24 flex-direction-column justify-end flex4-clz" @click="navigateTo" data-type="href" data-url="https://sjyhwl.github.io/ff/">
+									<span class="diygw-col-24 text2-clz"> 非凡视界项目 </span>
+									<span class="diygw-col-24"> 视界萤火非凡视界项目启动 </span>
+								</div>
+							</div>
+						</van-swipe-item>
+						<van-swipe-item class="diygw-swiper-item">
+							<div class="diygw-swiper-item-wrap">
+								<div class="flex flex-wrap diygw-col-24 flex-direction-column justify-end flex5-clz" @click="navigateTo" data-type="href" data-url="https://sjyhwl.github.io/ff/tool-html/FF-b001.html">
+									<span class="diygw-col-24 text5-clz"> 前端Code </span>
+									<span class="diygw-col-24"> 视界萤火官方前端编辑器 </span>
+								</div>
+							</div>
+						</van-swipe-item>
+					</van-swipe>
+				</div>
+				<div class="flex flex-wrap diygw-col-24 flex39-clz">
+					<div class="flex flex-wrap diygw-col-0 flex-direction-column justify-center flex40-clz" @click="navigateTo" data-type="href" data-url="https://support.qq.com/products/671005">
+						<span class="diygw-col-0"> 社区 </span>
+						<span class="diygw-col-0 text41-clz"> 官方社区 </span>
+					</div>
+					<div class="flex flex-wrap diygw-col-0 flex-direction-column justify-center items-start flex41-clz" @click="navigateTo" data-type="href" data-url="https://www.wenjuan.com/s/UZBZJvXSwyZ/">
+						<span class="diygw-col-0"> 加入 </span>
+						<span class="diygw-col-0 text44-clz"> 和我们携手开发 </span>
+					</div>
+				</div>
+				<div class="flex flex-wrap diygw-col-24 flex-direction-column flex38-clz">
+					<div class="flex diygw-col-24 items-center flex-nowrap flex35-clz">
+						<img src="./static/17318524509371.png" class="image11-size diygw-image diygw-col-0 image11-clz" mode="scaleToFill" />
+						<div class="flex diygw-col-0 flex-direction-column justify-between flex-nowrap flex37-clz">
+							<span class="diygw-col-24 text36-clz"> 非凡视界 </span>
+							<span class="diygw-col-24 text37-clz"> 视界萤火发起的公益项目 </span>
+						</div>
+						<span @click="navigateTo" data-type="href" data-url="https://sjyhwl.github.io/ff/" class="diygw-col-0 text38-clz"> 去看看 </span>
+					</div>
+				</div>
+				<div class="flex flex-wrap diygw-col-24 items-center flex7-clz">
+					<div class="flex flex-wrap diygw-col-24 items-center flex20-clz">
+						<div class="flex flex-wrap diygw-col-0 flex-direction-column flex21-clz">
+							<span class="diygw-text-line2 diygw-col-0 text13-clz"> 视界萤火 </span>
+							<span class="diygw-text-line2 diygw-col-0 text14-clz"> 让梦想落地成图 </span>
+						</div>
+						<div class="flex flex-wrap diygw-col-0 flex-direction-column items-center">
+							<span @click="navigateTo" data-type="href" data-url="https://www.wenjuan.com/s/UZBZJvXSwyZ/" class="diygw-text-line2 diygw-col-0 text15-clz"> 加入我们 </span>
+						</div>
+					</div>
+					<div class="flex flex-wrap diygw-col-24 flex-direction-column flex10-clz">
+						<div class="flex flex-wrap diygw-col-24 items-stretch">
+							<div class="flex flex-wrap diygw-col-0 flex-direction-column items-center flex12-clz">
+								<div class="flex flex-wrap diygw-col-0 flex-direction-column justify-center items-center flex13-clz">
+									<span class="diygw-col-0"> 1 </span>
+								</div>
+								<span class="diygw-col-0 text7-clz"> </span>
+							</div>
+							<div class="flex flex-wrap diygw-col-0 flex-direction-column flex25-clz">
+								<div class="flex flex-wrap diygw-col-0 items-center flex23-clz">
+									<span class="diygw-col-0 text16-clz"> 起点 </span>
+									<span class="diygw-col-0 text17-clz"> 2023年8月15日 </span>
+								</div>
+								<span class="diygw-col-0 text8-clz"> 成烁及其他的开发者一起创办了视界萤火社区，我们的梦想就此启航。 </span>
+							</div>
+						</div>
+						<div class="flex flex-wrap diygw-col-24">
+							<div class="flex flex-wrap diygw-col-0 flex-direction-column items-center flex36-clz">
+								<div class="flex flex-wrap diygw-col-0 flex-direction-column justify-center items-center flex14-clz">
+									<span class="diygw-col-0"> 2 </span>
+								</div>
+								<span class="diygw-col-0 text42-clz"> </span>
+							</div>
+							<div class="flex flex-wrap diygw-col-0 flex-direction-column flex24-clz">
+								<div class="flex flex-wrap diygw-col-0 items-center flex27-clz">
+									<span class="diygw-col-0 text18-clz"> 尝试 </span>
+									<span class="diygw-col-0 text19-clz"> CNE Office </span>
+								</div>
+								<span class="diygw-col-0 text20-clz"> 我们进行了办公应用的探索之旅，发布了社区的第一款作品。 </span>
+							</div>
+						</div>
+						<div class="flex flex-wrap diygw-col-24">
+							<div class="flex flex-wrap diygw-col-0 flex-direction-column items-center flex18-clz">
+								<div class="flex flex-wrap diygw-col-0 flex-direction-column justify-center items-center flex19-clz">
+									<span class="diygw-col-0"> 3 </span>
+								</div>
+							</div>
+							<div class="flex flex-wrap diygw-col-0 flex-direction-column flex15-clz">
+								<div class="flex flex-wrap diygw-col-0 items-center flex16-clz">
+									<span class="diygw-col-0 text10-clz"> 发展 </span>
+									<span class="diygw-col-0 text11-clz"> 非凡视界 </span>
+								</div>
+								<span class="diygw-col-0 text22-clz"> 我们启动了“非凡视界”项目计划，帮助更多的用户深入体会应用开发的乐趣。 </span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="flex flex-wrap diygw-col-24 flex-direction-column">
+					<div class="flex flex-wrap diygw-col-24 items-center flex58-clz">
+						<span class="diygw-col-0 text51-clz"> 领导团队 </span>
+					</div>
+					<scroll-view scroll-x scroll-with-animation class="flex scroll-view flex-wrap diygw-col-24 flex1-clz">
+						<div class="flex flex-nowrap">
+							<div class="flex flex-wrap diygw-col-0 flex-direction-column items-center flex3-clz">
+								<img src="./static/image_17319202385601.jpg" class="image10-size diygw-image diygw-col-0 image10-clz" mode="widthFix" />
+								<span class="diygw-col-24 text21-clz diygw-ellipsis"> 成烁 </span>
+							</div>
+							<div class="flex flex-wrap diygw-col-0 flex-direction-column items-center flex6-clz">
+								<img src="./static/image_17319203139541.jpg" class="image-size diygw-image diygw-col-0 image-clz" mode="widthFix" />
+								<span class="diygw-col-24 text23-clz diygw-ellipsis"> 逸生 </span>
+							</div>
+							<div class="flex flex-wrap diygw-col-0 flex-direction-column items-center flex8-clz">
+								<img src="./static/image_17319203591601.jpg" class="image8-size diygw-image diygw-col-0 image8-clz" mode="widthFix" />
+								<span class="diygw-col-24 text24-clz diygw-ellipsis"> 冻鼠 </span>
+							</div>
+							<div class="flex flex-wrap diygw-col-0 flex-direction-column items-center flex9-clz">
+								<img src="./static/image_17319204009361.jpg" class="image7-size diygw-image diygw-col-0 image7-clz" mode="widthFix" />
+								<span class="diygw-col-24 text25-clz diygw-ellipsis"> 地下狸猫 </span>
+							</div>
+							<div class="flex flex-wrap diygw-col-0 flex-direction-column items-center flex28-clz">
+								<img src="./static/image_17319204521461.jpg" class="image9-size diygw-image diygw-col-0 image9-clz" mode="widthFix" />
+								<span class="diygw-col-24 text26-clz diygw-ellipsis"> 夜星 </span>
+							</div>
+							<div class="flex flex-wrap diygw-col-0 flex-direction-column items-center flex29-clz">
+								<img src="./static/image_17319204928831.jpg" class="image1-size diygw-image diygw-col-0 image1-clz" mode="widthFix" />
+								<span class="diygw-col-24 text27-clz diygw-ellipsis"> 云轻轻欲雨 </span>
+							</div>
+						</div>
+					</scroll-view>
+				</div>
+				<div class="flex flex-wrap diygw-col-24 flex-direction-column flex30-clz">
+					<div class="flex flex-wrap diygw-col-24 items-center flex32-clz">
+						<img src="./static/17300359618701.png" class="response diygw-col-24 image2-clz" mode="widthFix" />
+					</div>
+					<div class="flex diygw-col-24 items-center flex-wrap flex31-clz">
+						<span class="diygw-col-0 text29-clz"> 技术干货 </span>
+						<span class="diygw-col-0 text30-clz"> 技术活动 </span>
+						<span class="diygw-col-0 text31-clz"> 开发者成长 </span>
+					</div>
+					<span class="diygw-col-0 text32-clz"> 面向开发者的一站式线上技术交流阵地 </span>
+					<div class="flex flex-wrap diygw-col-24">
+						<div class="flex flex-wrap diygw-col-12 items-center flex34-clz">
+							<span @click="navigateTo" data-type="href" data-url="https://support.qq.com/products/671005" class="diygw-col-0 text33-clz"> 论坛社区 </span>
+						</div>
+						<div class="flex flex-wrap diygw-col-12 items-center flex42-clz">
+							<span @click="navigateTo" data-type="href" data-url="https://sjyhwl.github.io/ff/" class="diygw-col-0 text34-clz"> 非凡视界 </span>
+						</div>
+						<div class="flex flex-wrap diygw-col-12 items-center flex50-clz">
+							<span @click="navigateTo" data-type="href" data-url="https://sjyhwl.github.io/ff/tool-html/FF-b001.html" class="diygw-col-0 text35-clz"> 视界前端Code </span>
+						</div>
+						<div class="flex flex-wrap diygw-col-12 items-center flex51-clz">
+							<span @click="navigateTo" data-type="href" data-url="https://mr-gcs.github.io/" class="diygw-col-0 text40-clz"> 成烁的个人主页 </span>
+						</div>
+					</div>
+					<span class="diygw-col-24 text52-clz"> © Horizon firefly 2024 </span>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</body>
+	<script type="module">
+		const app = Vue.createApp({
+			data() {
+				return {
+					swipers1Index: 0
+				};
+			},
+			created() {
+				this.init();
+			},
+			methods: {
+				async init() {},
+				changeSwipers1(evt) {
+					let swipers1Index = evt.detail.current;
+					this.setData({ swipers1Index });
+				}
+			}
+		});
+		app.use(vant);
+		app.use(DiygwLib);
+		app.config.globalProperties.$tools = new Tools();
+		app.config.globalProperties.$http = httpService;
+		app.config.globalProperties.$session = Session;
+		app.mixin({
+			methods: {
+				Validate,
+				setData,
+				navigateTo,
+				showModal,
+				showToast,
+				uploadImage
+			}
+		});
+		app.mount('#app');
+	</script>
+	<style>
+		.image13-clz {
+			flex-shrink: 0;
+			width: 150px !important;
+		}
+		.swipers1-clz {
+			color: #ffffff;
+		}
+		.flex2-clz {
+			padding-top: 12px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			padding-left: 10px;
+			padding-bottom: 22px;
+			background-image: url(/static/img_20241027_2038041.jpg);
+			height: 300px;
+			padding-right: 10px;
+		}
+		.text-clz {
+			font-size: 20px !important;
+		}
+		.flex4-clz {
+			padding-top: 12px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			padding-left: 10px;
+			padding-bottom: 22px;
+			background-image: url(/static/17319246892411.png);
+			height: 300px;
+			padding-right: 10px;
+		}
+		.text2-clz {
+			font-size: 20px !important;
+		}
+		.flex5-clz {
+			padding-top: 12px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			padding-left: 10px;
+			padding-bottom: 22px;
+			background-image: url(/static/17319253551951.png);
+			height: 300px;
+			padding-right: 10px;
+		}
+		.text5-clz {
+			font-size: 20px !important;
+		}
+		.flex39-clz {
+			padding-top: 5px;
+			z-index: 100;
+			color: #ffffff;
+			font-weight: bold;
+			padding-left: 5px;
+			font-size: 14px !important;
+			padding-bottom: 5px;
+			padding-right: 5px;
+		}
+		.flex40-clz {
+			padding-top: 20px;
+			border-bottom-left-radius: 6px;
+			z-index: 100;
+			background-size: cover;
+			padding-left: 20px;
+			padding-bottom: 20px;
+			border-top-right-radius: 6px;
+			background-position: center center;
+			margin-right: 5px;
+			margin-left: 5px;
+			background-repeat: no-repeat;
+			overflow: hidden;
+			flex: 1;
+			border-top-left-radius: 6px;
+			margin-top: 5px;
+			border-bottom-right-radius: 6px;
+			background-image: url(/static/bg8.png);
+			margin-bottom: 5px;
+			padding-right: 20px;
+		}
+		.text41-clz {
+			margin-left: 0px;
+			color: #efefef;
+			font-size: 11px !important;
+			margin-top: 5px;
+			margin-bottom: 0px;
+			margin-right: 0px;
+		}
+		.flex41-clz {
+			padding-top: 20px;
+			border-bottom-left-radius: 6px;
+			z-index: 100;
+			background-size: cover;
+			padding-left: 20px;
+			padding-bottom: 20px;
+			border-top-right-radius: 6px;
+			background-position: center center;
+			margin-right: 5px;
+			margin-left: 5px;
+			background-repeat: no-repeat;
+			overflow: hidden;
+			flex: 1;
+			border-top-left-radius: 6px;
+			margin-top: 5px;
+			border-bottom-right-radius: 6px;
+			background-image: url(/static/bg6.png);
+			margin-bottom: 5px;
+			padding-right: 20px;
+		}
+		.text44-clz {
+			margin-left: 0px;
+			color: #efefef;
+			font-size: 11px !important;
+			margin-top: 5px;
+			margin-bottom: 0px;
+			margin-right: 0px;
+		}
+		.flex38-clz {
+			padding-top: 10px;
+			border-bottom-left-radius: 8px;
+			background-size: 100% 100%;
+			color: #7666ff;
+			padding-left: 10px;
+			padding-bottom: 10px;
+			border-top-right-radius: 8px;
+			margin-right: 10px;
+			margin-left: 10px;
+			box-shadow: 0px 0px 8px #d9dcff;
+			overflow: hidden;
+			width: calc(100% - 10px - 10px) !important;
+			border-top-left-radius: 8px;
+			margin-top: 10px;
+			border-bottom-right-radius: 8px;
+			background-image: linear-gradient(90deg, rgba(252, 253, 255, 0.94) 10%, rgba(238, 243, 255, 0.95) 50%, rgba(252, 253, 255, 0.94) 100%);
+			margin-bottom: 10px;
+			padding-right: 10px;
+		}
+		.flex35-clz {
+			padding-top: 5px;
+			border-bottom-left-radius: 0px;
+			padding-left: 5px;
+			padding-bottom: 5px;
+			border-top-right-radius: 10px;
+			margin-right: 0px;
+			margin-left: 0px;
+			overflow: hidden;
+			flex: 1;
+			width: 100% !important;
+			border-top-left-radius: 0px;
+			margin-top: 5px;
+			border-bottom-right-radius: 10px;
+			background-image: linear-gradient(90deg, rgba(252, 253, 255, 0.94) 0%, #d4ddff 100%);
+			margin-bottom: 5px;
+			padding-right: 5px;
+		}
+		.image11-clz {
+			border-bottom-left-radius: 60px;
+			overflow: hidden;
+			border-top-left-radius: 60px;
+			border-top-right-radius: 60px;
+			border-bottom-right-radius: 60px;
+		}
+		.image11-size {
+			height: 40px !important;
+			width: 40px !important;
+		}
+		.flex37-clz {
+			padding-top: 5px;
+			flex: 1;
+			padding-left: 10px;
+			padding-bottom: 5px;
+			padding-right: 5px;
+		}
+		.text36-clz {
+			color: #1d1d1d;
+			font-weight: bold;
+			font-size: 14px !important;
+		}
+		.text37-clz {
+			color: #747474;
+		}
+		.text38-clz {
+			background-color: #887cfe;
+			padding-top: 5px;
+			border-bottom-left-radius: 16px;
+			overflow: hidden;
+			color: #ffffff;
+			font-weight: bold;
+			padding-left: 20px;
+			padding-bottom: 5px;
+			border-top-left-radius: 16px;
+			border-top-right-radius: 16px;
+			border-bottom-right-radius: 16px;
+			padding-right: 20px;
+		}
+		.flex7-clz {
+			margin-left: 10px;
+			border-bottom-left-radius: 10px;
+			overflow: hidden;
+			width: calc(100% - 10px - 10px) !important;
+			border-top-left-radius: 10px;
+			margin-top: 10px;
+			border-top-right-radius: 10px;
+			border-bottom-right-radius: 10px;
+			background-image: linear-gradient(180deg, rgba(234, 241, 255, 1) 0%, rgba(246, 249, 255, 1) 12%, rgba(249, 248, 248, 1) 25%);
+			margin-bottom: 10px;
+			margin-right: 10px;
+		}
+		.flex20-clz {
+			padding-top: 10px;
+			border-bottom-left-radius: 0px;
+			overflow: hidden;
+			padding-left: 10px;
+			padding-bottom: 10px;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			border-bottom-right-radius: 0px;
+			border-bottom: 1px solid #eee;
+			padding-right: 10px;
+		}
+		.flex21-clz {
+			flex: 1;
+		}
+		.text13-clz {
+			margin-left: 5px;
+			font-weight: bold;
+			font-size: 15px !important;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			margin-right: 5px;
+		}
+		.text14-clz {
+			margin-left: 5px;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			margin-right: 5px;
+		}
+		.text15-clz {
+			padding-top: 5px;
+			border-bottom-left-radius: 6px;
+			color: #ffffff;
+			padding-left: 12px;
+			font-size: 13px !important;
+			padding-bottom: 5px;
+			border-top-right-radius: 6px;
+			margin-right: 5px;
+			background-color: #1966ff;
+			margin-left: 5px;
+			overflow: hidden;
+			border-top-left-radius: 6px;
+			margin-top: 5px;
+			border-bottom-right-radius: 6px;
+			margin-bottom: 5px;
+			padding-right: 12px;
+		}
+		.flex10-clz {
+			padding-top: 10px;
+			padding-left: 10px;
+			padding-bottom: 10px;
+			padding-right: 10px;
+		}
+		.flex12-clz {
+			flex-shrink: 0;
+			width: 30px !important;
+		}
+		.flex13-clz {
+			background-color: #186fff;
+			flex-shrink: 0;
+			border-bottom-left-radius: 60px;
+			overflow: hidden;
+			color: #ffffff;
+			width: 20px !important;
+			border-top-left-radius: 60px;
+			border-top-right-radius: 60px;
+			border-bottom-right-radius: 60px;
+			height: 20px !important;
+		}
+		.text7-clz {
+			background-color: #ffffff;
+			flex-shrink: 0;
+			flex: 1;
+			border-left: 1px solid #4f90fe;
+			width: 1px !important;
+		}
+		.flex25-clz {
+			margin-left: 5px;
+			flex: 1;
+			margin-top: 0px;
+			margin-bottom: 10px;
+			margin-right: 0px;
+		}
+		.flex23-clz {
+			color: #186fff;
+		}
+		.text16-clz {
+			margin-left: 5px;
+			font-weight: bold;
+			font-size: 14px !important;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			margin-right: 5px;
+		}
+		.text17-clz {
+			background-color: rgba(25, 102, 255, 0.08);
+			padding-top: 2px;
+			border-bottom-left-radius: 6px;
+			overflow: hidden;
+			padding-left: 5px;
+			padding-bottom: 2px;
+			border-top-left-radius: 6px;
+			border-top-right-radius: 6px;
+			border-bottom-right-radius: 6px;
+			padding-right: 5px;
+		}
+		.text8-clz {
+			margin-left: 5px;
+			color: #6d6d6d;
+			flex: 1;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			margin-right: 5px;
+		}
+		.flex36-clz {
+			flex-shrink: 0;
+			width: 30px !important;
+		}
+		.flex14-clz {
+			background-color: #186fff;
+			flex-shrink: 0;
+			border-bottom-left-radius: 60px;
+			overflow: hidden;
+			color: #ffffff;
+			width: 20px !important;
+			border-top-left-radius: 60px;
+			border-top-right-radius: 60px;
+			border-bottom-right-radius: 60px;
+			height: 20px !important;
+		}
+		.text42-clz {
+			background-color: #ffffff;
+			flex-shrink: 0;
+			flex: 1;
+			border-left: 1px solid #4f90fe;
+			width: 1px !important;
+		}
+		.flex24-clz {
+			margin-left: 5px;
+			flex: 1;
+			margin-top: 0px;
+			margin-bottom: 10px;
+			margin-right: 0px;
+		}
+		.flex27-clz {
+			color: #186fff;
+		}
+		.text18-clz {
+			margin-left: 5px;
+			font-weight: bold;
+			font-size: 14px !important;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			margin-right: 5px;
+		}
+		.text19-clz {
+			background-color: rgba(25, 102, 255, 0.08);
+			padding-top: 2px;
+			border-bottom-left-radius: 6px;
+			overflow: hidden;
+			padding-left: 5px;
+			padding-bottom: 2px;
+			border-top-left-radius: 6px;
+			border-top-right-radius: 6px;
+			border-bottom-right-radius: 6px;
+			padding-right: 5px;
+		}
+		.text20-clz {
+			margin-left: 5px;
+			color: #6d6d6d;
+			flex: 1;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			margin-right: 5px;
+		}
+		.flex18-clz {
+			flex-shrink: 0;
+			width: 30px !important;
+		}
+		.flex19-clz {
+			background-color: #186fff;
+			flex-shrink: 0;
+			border-bottom-left-radius: 60px;
+			overflow: hidden;
+			color: #ffffff;
+			width: 20px !important;
+			border-top-left-radius: 60px;
+			border-top-right-radius: 60px;
+			border-bottom-right-radius: 60px;
+			height: 20px !important;
+		}
+		.flex15-clz {
+			margin-left: 5px;
+			flex: 1;
+			margin-top: 0px;
+			margin-bottom: 10px;
+			margin-right: 0px;
+		}
+		.flex16-clz {
+			color: #186fff;
+		}
+		.text10-clz {
+			margin-left: 5px;
+			font-weight: bold;
+			font-size: 14px !important;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			margin-right: 5px;
+		}
+		.text11-clz {
+			background-color: rgba(25, 102, 255, 0.08);
+			padding-top: 2px;
+			border-bottom-left-radius: 6px;
+			overflow: hidden;
+			padding-left: 5px;
+			padding-bottom: 2px;
+			border-top-left-radius: 6px;
+			border-top-right-radius: 6px;
+			border-bottom-right-radius: 6px;
+			padding-right: 5px;
+		}
+		.text22-clz {
+			margin-left: 5px;
+			color: #6d6d6d;
+			flex: 1;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			margin-right: 5px;
+		}
+		.flex58-clz {
+			padding-top: 5px;
+			padding-left: 5px;
+			padding-bottom: 5px;
+			padding-right: 5px;
+		}
+		.text51-clz {
+			font-weight: bold;
+			flex: 1;
+			font-size: 14px !important;
+		}
+		.flex1-clz {
+			padding-top: 5px;
+			padding-left: 5px;
+			padding-bottom: 5px;
+			padding-right: 5px;
+		}
+		.flex3-clz {
+			padding-top: 18px;
+			border-bottom-left-radius: 6px;
+			padding-left: 5px;
+			padding-bottom: 18px;
+			border-top-right-radius: 6px;
+			margin-right: 5px;
+			background-color: #fafbfd;
+			margin-left: 5px;
+			flex-shrink: 0;
+			overflow: hidden;
+			width: 80px !important;
+			border-top-left-radius: 6px;
+			margin-top: 5px;
+			border-bottom-right-radius: 6px;
+			margin-bottom: 5px;
+			padding-right: 5px;
+		}
+		.image10-clz {
+			border: 1px solid #fbfbfb;
+			border-bottom-left-radius: 60px;
+			overflow: hidden;
+			border-top-left-radius: 60px;
+			border-top-right-radius: 60px;
+			border-bottom-right-radius: 60px;
+		}
+		.image10-size {
+			height: 48px !important;
+			width: 48px !important;
+		}
+		.text21-clz {
+			margin-left: 0px;
+			width: 100% !important;
+			margin-top: 5px;
+			margin-bottom: 0px;
+			text-align: center;
+			margin-right: 0px;
+		}
+		.flex6-clz {
+			padding-top: 18px;
+			border-bottom-left-radius: 6px;
+			padding-left: 5px;
+			padding-bottom: 18px;
+			border-top-right-radius: 6px;
+			margin-right: 5px;
+			background-color: #fafbfd;
+			margin-left: 5px;
+			flex-shrink: 0;
+			overflow: hidden;
+			width: 80px !important;
+			border-top-left-radius: 6px;
+			margin-top: 5px;
+			border-bottom-right-radius: 6px;
+			margin-bottom: 5px;
+			padding-right: 5px;
+		}
+		.image-clz {
+			border: 1px solid #fbfbfb;
+			border-bottom-left-radius: 60px;
+			overflow: hidden;
+			border-top-left-radius: 60px;
+			border-top-right-radius: 60px;
+			border-bottom-right-radius: 60px;
+		}
+		.image-size {
+			height: 48px !important;
+			width: 48px !important;
+		}
+		.text23-clz {
+			margin-left: 0px;
+			width: 100% !important;
+			margin-top: 5px;
+			margin-bottom: 0px;
+			text-align: center;
+			margin-right: 0px;
+		}
+		.flex8-clz {
+			padding-top: 18px;
+			border-bottom-left-radius: 6px;
+			padding-left: 5px;
+			padding-bottom: 18px;
+			border-top-right-radius: 6px;
+			margin-right: 5px;
+			background-color: #fafbfd;
+			margin-left: 5px;
+			flex-shrink: 0;
+			overflow: hidden;
+			width: 80px !important;
+			border-top-left-radius: 6px;
+			margin-top: 5px;
+			border-bottom-right-radius: 6px;
+			margin-bottom: 5px;
+			padding-right: 5px;
+		}
+		.image8-clz {
+			border: 1px solid #fbfbfb;
+			border-bottom-left-radius: 60px;
+			overflow: hidden;
+			border-top-left-radius: 60px;
+			border-top-right-radius: 60px;
+			border-bottom-right-radius: 60px;
+		}
+		.image8-size {
+			height: 48px !important;
+			width: 48px !important;
+		}
+		.text24-clz {
+			margin-left: 0px;
+			width: 100% !important;
+			margin-top: 5px;
+			margin-bottom: 0px;
+			text-align: center;
+			margin-right: 0px;
+		}
+		.flex9-clz {
+			padding-top: 18px;
+			border-bottom-left-radius: 6px;
+			padding-left: 5px;
+			padding-bottom: 18px;
+			border-top-right-radius: 6px;
+			margin-right: 5px;
+			background-color: #fafbfd;
+			margin-left: 5px;
+			flex-shrink: 0;
+			overflow: hidden;
+			width: 80px !important;
+			border-top-left-radius: 6px;
+			margin-top: 5px;
+			border-bottom-right-radius: 6px;
+			margin-bottom: 5px;
+			padding-right: 5px;
+		}
+		.image7-clz {
+			border: 1px solid #fbfbfb;
+			border-bottom-left-radius: 60px;
+			overflow: hidden;
+			border-top-left-radius: 60px;
+			border-top-right-radius: 60px;
+			border-bottom-right-radius: 60px;
+		}
+		.image7-size {
+			height: 48px !important;
+			width: 48px !important;
+		}
+		.text25-clz {
+			margin-left: 0px;
+			width: 100% !important;
+			margin-top: 5px;
+			margin-bottom: 0px;
+			text-align: center;
+			margin-right: 0px;
+		}
+		.flex28-clz {
+			padding-top: 18px;
+			border-bottom-left-radius: 6px;
+			padding-left: 5px;
+			padding-bottom: 18px;
+			border-top-right-radius: 6px;
+			margin-right: 5px;
+			background-color: #fafbfd;
+			margin-left: 5px;
+			flex-shrink: 0;
+			overflow: hidden;
+			width: 80px !important;
+			border-top-left-radius: 6px;
+			margin-top: 5px;
+			border-bottom-right-radius: 6px;
+			margin-bottom: 5px;
+			padding-right: 5px;
+		}
+		.image9-clz {
+			border: 1px solid #fbfbfb;
+			border-bottom-left-radius: 60px;
+			overflow: hidden;
+			border-top-left-radius: 60px;
+			border-top-right-radius: 60px;
+			border-bottom-right-radius: 60px;
+		}
+		.image9-size {
+			height: 48px !important;
+			width: 48px !important;
+		}
+		.text26-clz {
+			margin-left: 0px;
+			width: 100% !important;
+			margin-top: 5px;
+			margin-bottom: 0px;
+			text-align: center;
+			margin-right: 0px;
+		}
+		.flex29-clz {
+			padding-top: 18px;
+			border-bottom-left-radius: 6px;
+			padding-left: 5px;
+			padding-bottom: 18px;
+			border-top-right-radius: 6px;
+			margin-right: 5px;
+			background-color: #fafbfd;
+			margin-left: 5px;
+			flex-shrink: 0;
+			overflow: hidden;
+			width: 80px !important;
+			border-top-left-radius: 6px;
+			margin-top: 5px;
+			border-bottom-right-radius: 6px;
+			margin-bottom: 5px;
+			padding-right: 5px;
+		}
+		.image1-clz {
+			border: 1px solid #fbfbfb;
+			border-bottom-left-radius: 60px;
+			overflow: hidden;
+			border-top-left-radius: 60px;
+			border-top-right-radius: 60px;
+			border-bottom-right-radius: 60px;
+		}
+		.image1-size {
+			height: 48px !important;
+			width: 48px !important;
+		}
+		.text27-clz {
+			margin-left: 0px;
+			width: 100% !important;
+			margin-top: 5px;
+			margin-bottom: 0px;
+			text-align: center;
+			margin-right: 0px;
+		}
+		.flex30-clz {
+			padding-top: 5px;
+			border-bottom-left-radius: 6px;
+			padding-left: 5px;
+			padding-bottom: 5px;
+			border-top-right-radius: 6px;
+			margin-right: 10px;
+			background-color: #7e98f7;
+			margin-left: 10px;
+			box-shadow: 1px 1px 3px rgba(31, 31, 31, 0.16), 1px 1px 3px rgba(255, 255, 255, 0.16);
+			overflow: hidden;
+			width: calc(100% - 10px - 10px) !important;
+			border-top-left-radius: 6px;
+			margin-top: 10px;
+			border-bottom-right-radius: 6px;
+			background-image: linear-gradient(0deg, #fff, #f3f5f8);
+			margin-bottom: 10px;
+			padding-right: 5px;
+		}
+		.flex32-clz {
+			padding-top: 5px;
+			padding-left: 5px;
+			padding-bottom: 5px;
+			padding-right: 5px;
+		}
+		.image2-clz {
+			flex-shrink: 0;
+			width: 150px !important;
+		}
+		.flex31-clz {
+			padding-top: 5px;
+			padding-left: 5px;
+			padding-bottom: 5px;
+			padding-right: 5px;
+		}
+		.text29-clz {
+			border: 1px solid #c8c8c8;
+			padding-top: 2px;
+			border-bottom-left-radius: 3px;
+			color: #5f7292;
+			padding-left: 5px;
+			padding-bottom: 2px;
+			border-top-right-radius: 3px;
+			margin-right: 5px;
+			margin-left: 0px;
+			overflow: hidden;
+			border-top-left-radius: 3px;
+			margin-top: 5px;
+			border-bottom-right-radius: 3px;
+			margin-bottom: 0px;
+			padding-right: 5px;
+		}
+		.text30-clz {
+			border: 1px solid #c8c8c8;
+			padding-top: 2px;
+			border-bottom-left-radius: 3px;
+			color: #5f7292;
+			padding-left: 5px;
+			padding-bottom: 2px;
+			border-top-right-radius: 3px;
+			margin-right: 5px;
+			margin-left: 0px;
+			overflow: hidden;
+			border-top-left-radius: 3px;
+			margin-top: 5px;
+			border-bottom-right-radius: 3px;
+			margin-bottom: 0px;
+			padding-right: 5px;
+		}
+		.text31-clz {
+			border: 1px solid #c8c8c8;
+			padding-top: 2px;
+			border-bottom-left-radius: 3px;
+			color: #5f7292;
+			padding-left: 5px;
+			padding-bottom: 2px;
+			border-top-right-radius: 3px;
+			margin-right: 5px;
+			margin-left: 0px;
+			overflow: hidden;
+			border-top-left-radius: 3px;
+			margin-top: 5px;
+			border-bottom-right-radius: 3px;
+			margin-bottom: 0px;
+			padding-right: 5px;
+		}
+		.text32-clz {
+			padding-top: 5px;
+			padding-left: 5px;
+			padding-bottom: 5px;
+			padding-right: 5px;
+		}
+		.flex34-clz {
+			padding-top: 5px;
+			padding-left: 5px;
+			padding-bottom: 5px;
+			padding-right: 5px;
+		}
+		.text33-clz {
+			flex: 1;
+		}
+		.flex42-clz {
+			padding-top: 5px;
+			padding-left: 5px;
+			padding-bottom: 5px;
+			padding-right: 5px;
+		}
+		.text34-clz {
+			flex: 1;
+		}
+		.flex50-clz {
+			padding-top: 5px;
+			padding-left: 5px;
+			padding-bottom: 5px;
+			padding-right: 5px;
+		}
+		.text35-clz {
+			flex: 1;
+		}
+		.flex51-clz {
+			padding-top: 5px;
+			padding-left: 5px;
+			padding-bottom: 5px;
+			padding-right: 5px;
+		}
+		.text40-clz {
+			flex: 1;
+		}
+		.text52-clz {
+			padding-top: 15px;
+			color: #2a2a2a;
+			padding-left: 5px;
+			padding-bottom: 5px;
+			text-align: center;
+			padding-right: 5px;
+		}
+		.container329290 {
+		}
+	</style>
+</html>

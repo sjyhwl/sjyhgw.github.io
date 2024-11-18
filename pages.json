@@ -1,0 +1,15 @@
+{
+	"pages": [
+		{
+			"path": "pages/webview",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "视界萤火",
+		"navigationBarBackgroundColor": "#07c160"
+	}
+}
